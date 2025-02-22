@@ -1,0 +1,94 @@
+{
+    "table": {
+      "columns": [
+        {
+          "id": "select",
+          "type": "checkbox",
+          "width": 10,
+          "label": ""
+        },
+        {
+          "id": "avatar",
+          "type": "image",
+          "width": 10,
+          "label": "",
+          "dataKey": "avatar"
+        },
+        {
+          "id": "name",
+          "type": "user",
+          "width": 200,
+          "label": "Name",
+          "dataKey": ["name", "username"]
+        },
+        {
+          "id": "status",
+          "type": "badge",
+          "width": 120,
+          "label": "Status",
+          "dataKey": "status",
+          "styles": {
+            "Working": {
+              "backgroundColor": "#E8F5E9",
+              "color": "#2E7D32"
+            },
+            "Offline": {
+              "backgroundColor": "#FFEBEE",
+              "color": "#C62828"
+            }
+          }
+        },
+        {
+          "id": "role",
+          "type": "text",
+          "width": 150,
+          "label": "Role",
+          "dataKey": "role"
+        },
+        {
+          "id": "email",
+          "type": "text",
+          "width": 250,
+          "label": "Email",
+          "dataKey": "email"
+        },
+        {
+          "id": "teams",
+          "type": "tags",
+          "width": 300,
+          "label": "Teams",
+          "dataKey": "teams",
+          "additionalKey": "additionalTeams",
+          "styles": {
+            "tag": {
+              "backgroundColor": "#E3F2FD",
+              "color": "#1976D2"
+            }
+          }
+        }
+      ],
+      "pagination": {
+        "enabled": true,
+        "rowsPerPage": [5, 20, 30],
+        "defaultPage": 7
+      },
+      "styles": {
+        "table": {
+          "borderRadius": "8px",
+          "border": "1px solid #E0E0E0"
+          
+        },
+        "header": {
+          "backgroundColor": "#F5F5F5",
+          "color": "#333333"
+          
+         
+        },
+        "row": {
+          "hover": {
+            "backgroundColor": "#F5F5F5"
+          }
+        }
+      }
+    }
+  }
