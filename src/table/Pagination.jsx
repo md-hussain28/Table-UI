@@ -1,4 +1,3 @@
-// components/Table/Pagination.jsx
 import React from "react";
 
 const PaginationButton = ({ type, onClick, disabled }) => {
